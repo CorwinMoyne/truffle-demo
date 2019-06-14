@@ -1,0 +1,27 @@
+{
+  "name": "truffle-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "truffle": "^5.0.22"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node --inspect-brk ./node_modules/truffle/build/cli.bundled.js test test/test_to_debug.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CorwinMoyne/truffle-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CorwinMoyne/truffle-demo/issues"
+  },
+  "homepage": "https://github.com/CorwinMoyne/truffle-demo#readme"
+}

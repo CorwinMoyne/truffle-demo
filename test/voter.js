@@ -17,7 +17,7 @@ contract('Voter', (accounts) => {
     });
 
     it('can vote with a string option', async () => {
-        await voter.vote(
+        await voter.methods['vote(string)'](
             'coffee',
             { from: firstAccount }
         );
@@ -25,8 +25,8 @@ contract('Voter', (accounts) => {
         expect(toNumbers(votes)).to.deep.equal([1, 0]);
     });
 
-    it.only('can vote with a number option', async () => {
-        await voter.vote['uint256'](
+    it('can vote with a number option', async () => {        
+        await voter.methods['vote(uint256)'](
             0,
             { from: firstAccount }
         );
